@@ -10,6 +10,7 @@ module.exports = {
       })
     ]
   },
+
   pwa: {
     name: 'Vue Argon Dashboard',
     themeColor: '#172b4d',
@@ -17,8 +18,15 @@ module.exports = {
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: '#172b4d'
   },
+
   css: {
     sourceMap: true
   },
-  productionSourceMap: false
+
+  productionSourceMap: false,
+  publicPath: '/argon/',
+  outputDir: 'docs',
+  assetsDir: undefined,
+  runtimeCompiler: undefined,
+  parallel: undefined
 };
